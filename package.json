@@ -1,0 +1,50 @@
+{
+  "name": "escape-regexp-modern",
+  "version": "1.0.0",
+  "description": "Tiny, zero-dependency, TypeScript-first function to safely escape strings for JavaScript regular expressions.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run build",
+    "bench": "node scripts/bench.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourname/escape-regexp-modern.git"
+  },
+  "author": "Your Name <you@example.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/yourname/escape-regexp-modern#readme",
+  "keywords": [
+    "regex",
+    "escape",
+    "regexp",
+    "typescript",
+    "esm",
+    "cjs"
+  ],
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.6.3",
+    "vitest": "^1.6.0"
+  }
+}
