@@ -29,11 +29,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourname/escape-regexp-modern.git"
+    "url": "git+https://github.com/rish405/escape-regexp-modern.git"
   },
   "author": "Your Name <you@example.com>",
   "license": "MIT",
-  "homepage": "https://github.com/yourname/escape-regexp-modern#readme",
+  "homepage": "https://github.com/rish405/escape-regexp-modern#readme",
+  "bugs": {
+    "url": "https://github.com/rish405/escape-regexp-modern/issues"
+  },
   "keywords": [
     "regex",
     "escape",
